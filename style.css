@@ -1,0 +1,122 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #775B84;
+    --off-white: #E9E9E9;
+    --white: #FFFFFF;
+    --background-color: #F3F3F3;
+}
+
+body, h2, p {
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3125rem;
+    background: var(--background-color);
+    display: grid;
+    place-items: center;
+    line-height: 1.6;
+    width: min(90%, 30rem);
+    margin: 0 auto;
+}
+
+#open {
+    background: var(--purple);
+    border-radius: 20px;
+    border: none;
+    color: var(--white);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.2em 2.5em;
+    width: min(100%, 60rem);
+    margin-top: 6.5rem;
+    font-size: 2rem;
+}
+
+#close {
+    background: var(--white);
+    border-radius: 20px;
+    outline: none;
+    color: var(--purple);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 0.2em 1em;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    width: min(100%, 60rem);
+    font-size: 2rem;
+}
+
+#update {
+    background: var(--white);
+    border-radius: 20px;
+    outline: none;
+    color: var(--purple);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 0.3em 1em;
+    margin: 2.5rem auto;
+    width: min(70%, 16rem);
+    font-size: 1.3125rem;
+    display: block;
+}
+
+h2 {
+    line-height: 1;
+    text-align: center;
+    font-size: 1.3125em;
+    font-weight: normal;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    color: #6e5779;
+}
+
+.label {
+    border: none;
+    background-color: var(--off-white);
+    font-size: 1.5em;
+    width: min(25%, 40rem);
+    text-align: center;
+    border-radius: 10px;
+    padding: .5em ;
+    font-weight: 700;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #67576e;
+}
+
+.inputs {
+    text-align: center;
+    margin: 0 auto;
+}
+
+text {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 60rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    margin: 1rem auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
